@@ -2,12 +2,12 @@
 CS1811 : OOP 1 Assignment 1
 
 Learning Outcomes Assessed
-This assignment tests your ability to write a complete Java program, using the control flow constructs described in the lectures. That is,
-
-sequencing,
+This assignment tests your ability to write a complete Java program, using the control flow constructs described in the lectures. That is,sequencing,
 branching,
 loops,
 method calls.
+
+
 You will write a program that interacts with the user via a Scanner and performs some simple calculations.
 
 Goal
