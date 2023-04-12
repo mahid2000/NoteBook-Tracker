@@ -1,16 +1,19 @@
 # NoteBook-Tracker
 CS1811 : OOP 1 Assignment 1
 
-Learning Outcomes Assessed
+
+Learning Outcomes Assessed:
+
 This assignment tests your ability to write a complete Java program, using the control flow constructs described in the lectures. That is,sequencing,
 branching,
 loops,
 method calls.
 
-
 You will write a program that interacts with the user via a Scanner and performs some simple calculations.
 
-Goal
+
+Goal:
+
 Your friend is a PhD student studying biology at RHUL. Like all biologists, she keeps a log of her experiments in her lab notebook. The lab is shared amongst all PhD students, and there are often several experiments going on at one time. Access to the lab is controlled by swipe card. Researchers, cleaners, contractors, and other staff must swipe both in and out of the lab.
 
 Because all researchers use standard issue notebooks, it is not uncommon for mix ups to occur and for notebooks to go missing. Your friend is frequently receiving mass emails asking everyone to check if they’ve picked up the wrong notebook by mistake.
