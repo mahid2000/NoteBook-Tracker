@@ -1,0 +1,20 @@
+The Goal of this project was to create a peice of software that could take the data of who and when someone was in the lab, and use that to allow researches who have lost their notebooks to be able to sent Emails to only the staff that could possibly have them. 
+To do this I utilised 4 different methods;
+1)enquiry()                                : This method allowed the user to input their details such as when their notebook could have been missing from and when they actually noticed it.(This method was called in the Main method)
+2)staffName(), staffArrival(), staffExit() : This method allowed us to find out when each satff member enetred and exited the labs.
+3)timesCross(), timesCrossLate()           : This method was used to calculate if the two time periods of the missing books and staff members in the labs ever crossed. It output true if they did and false if they didnt.
+4)getCrossingStaff()                       : This method output the name of the staff that was in the lab during the time time epriod that the notebooks were missing.
+
+Implimenting timesCross(), timesCrossLate() and getCrossingStaff() was quite challanging (Not as much as Q5 though :(... ). 
+
+For timeCross figuring out that I had to use a if and else loop was stright forward, however implimenting the logic to check if the times overlapped was slightly challanging. The challange was made more apparant when implimenting the timesCrossLate() method. This was because the "times" we were given were intigers in a 24 hour format and seeing as the timesCrossLate function was made to take into late operation hours after midnight(12), the task of finding overlapping times was made even harder. 
+To solve this i used  "if(early_t <= staffLeft && notice_t > staffArrived)" which allowed us to check if the times that the notebooks could have been lost were within the staffs working time and To oevrsome the midnight hurdle I used "if(early_t > notice_t)" and "if(staffArrived > staffLeft)" to find out if the times went past midnight, as the later time epriod numbers cannot be lower unless the clock went past midnight and reset. We then added 24 hours to each of the later times within the timeperiods to take this into account.
+Then I used "if(early_t <= staffLeft && notice_t > staffArrived)" to check if any of the staff was there when the notebooks went missing again and returned true if there were and false if there werent.
+
+To impliment getCrossingStaff I first asked the user to input the numebr of staff, I then used this to loop through each member of staff using a for loop and matched the information I aqquired using the "staffName()", "staffArrival()", "staffExit()" methods to the corresponding staff member. I then called the "timesCross()" ,method inputting all the collected data as arguments int he format (earliest lost time, noticed lost time, staff arrival time, staff exit time). 
+This then checked is the times the books were lost matched the time the staff were present in the labs and prints a statement saying "... might have the notebook" if the times match and "... will not have the notebook" othewise (... being the corresponding staff name).
+
+I named my varibles 'early_t', 'notice_t', 'staffArrived' and 'staffLeft' to help me better understand the overall objective that I had for each variable and what it stood for in the real world.
+I chose to use if/else and for loops because the if/else loops allowed me to easily impliment conditionals and the for loop allowd me to manage how many times the loop ran more easily than a while loop.
+I chose to put my curly brackets on seperate lines to the code to allow me to identify which peices of code were for which method and did what more easily and to make my code seem less cluttered.
+I treid to initialise all vairbles in batches as close togeter as possible as that is good practice.
